@@ -1,0 +1,72 @@
+
+#page-dash h6{
+    color: #DCDCDC;
+}
+
+#page-dash .card-group {
+    flex: 1;
+    display: flex;
+  }
+#page-dash .card-group .card-content + .card-content {
+    margin-left: 0.5%;
+  }
+
+#page-dash h6 {
+    color: #0b4e56;
+}
+#page-dash h5 {
+    color: white;
+    margin-top: -2%;
+}
+#page-dash .dados {
+    color: black;
+    margin-top: -2%;
+}
+
+#card1, #card2, #card3, #card4, #card5 {
+    width: 19%;
+}
+
+#card1{
+    background: linear-gradient(to bottom right,  #00c0ef, #8ed7e7, #00c0ef);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+#card2{
+    background: linear-gradient(to bottom right , #dd4b39, #e6a59c, #dd4b39);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+#card3{
+    background: linear-gradient(to bottom right , #00a65a, #96ebc4, #00a65a);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+#card4{
+    background: linear-gradient(to bottom right , #8a8414, #ceca7b, #8a8414);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+#card5{
+    background: linear-gradient(to bottom right, #808080, #dbdbdb, #808080);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+#grid4{
+    width: 50%; 
+    position: absolute; 
+    left:2%;
+}
+#grid5{
+    width: 70%;
+    position: absolute;
+    right: 7px;
+    margin-top: 1%;
+}
+
+@media(max-width: 1245px) {
+    #grid4{
+        display:none;
+    }
+    #grid5{
+        width: 100%;
+    }
+}
+
+
+

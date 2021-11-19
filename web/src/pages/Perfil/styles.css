@@ -1,0 +1,96 @@
+#page-perfil form {
+    position: absolute;
+    width: 50%;
+    padding: 1%;
+    background: #DCDCDC;
+    border-radius: 8px;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+#page-perfil form h1 {
+    font-size: 36px;
+    color: #0b4e56;
+    text-align: center;
+  }
+  
+#page-perfil form fieldset {
+    margin-top: 1%;
+    min-inline-size: auto;
+    border: 0;
+  }
+  
+#page-perfil form .field-group {
+    flex: 1;
+    display: flex;
+  }
+  
+#page-perfil form .field {
+    flex: 1;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+  
+#page-perfil form .field input[type=text],
+#page-perfil form .field input[type=email],
+#page-perfil form .field input[type=number],
+#page-perfil form .field input[type=password] {
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px;
+    font-size: 16px;
+    color: #6C6C80;
+    width: 95%;
+  }
+
+  
+  #page-perfil form .field input::placeholder {
+    color: #A0A0B2;
+  }
+  
+  #page-perfil form .field label {
+    font-size: 14px;
+    margin-bottom: 1%;
+  }
+  
+  #page-perfil form .field :disabled {
+    cursor: not-allowed;
+  }
+  
+  #page-perfil form .field-group .field + .field {
+    margin-left: 2%;
+  }
+  
+  #page-perfil form .field-group input + input {
+    margin-left: 2%;
+  }
+
+  #page-perfil form button {
+    width: 40%;
+    height: 60px;
+    background: #0b4e56;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 2%;
+    margin-left: 27%;
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  
+  #page-perfil form button:hover {
+    background: #106a75;
+  }
+
+  #page-perfil .error{
+    color: #F64C75;
+    align-self:flex-start;
+  }
+  
+  
