@@ -22,8 +22,6 @@ const pedidosController = new PedidosController();
 
 
 routes.post('/login', sessionsController.create);
-routes.post('/send-email', sessionsController.sendEmail);
-
 
 routes.get('/users', usersController.index);
 routes.get('/statusPedido', statusController.index);
@@ -55,17 +53,7 @@ routes.post('/pedidos', pedidosController.create);
 routes.put('/pedidos/:id', pedidosController.update);
 routes.delete('/pedidos/:id', pedidosController.delete);
 
-
-routes.get('forgot-password');
-routes.get('password-reset');
-routes.post('forgot-password');
-routes.post('password-reset');
-
 routes.get('/register');
 routes.post('/register');
-
-routes.get('/');
-routes.put('/');
-routes.delete('/');
 
 export default routes;

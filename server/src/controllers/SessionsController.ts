@@ -43,38 +43,6 @@ class SessionsController{
         return response.json({user, token, produto, cliente, pedido});
 
     }
-
-    async sendEmail (request : Request, response : Response){
-       
-        const {email} = request.body
-        
-        const user1 = await knex('users').where('email', email).first();
-
-        if(user1){
-            const transporter = nodemailer.createTransport({
-                host: "smtp.mailtrap.io",
-                port: 2525,
-                auth: {
-                    user: "420288f26b3744",
-                    pass: "010473be400215"
-                }
-            })
-
-            transporter.sendMail({
-                from: 'Administrador <cc14f64dee-ff108c@inbox.mailtrap.io>',
-                to: email,
-                subject: 'Recuperação de Senha',
-                html: `<p>Ola, sua senha nova para acessar o sistema é </p> </br> <a href="http://localhost:3000/verify-hash/"> Site </a>` 
-            }).then(
-                 () =>{
-                    return response.status(200).json({message:'email enviado'})   
-                }
-            ).catch(()=>{
-                return response.status(404).json({message:'email não enviado'});
-            });
-        }
-
-    }
 }
 
 
