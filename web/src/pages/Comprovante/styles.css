@@ -1,0 +1,75 @@
+#page-comprovante form {
+    position: absolute;
+    margin-left: 0px ;
+    margin-top: -12px ;
+    padding: 2%;
+    background: #DCDCDC;
+    border-radius: 8px;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-comprovante form h1 {
+    font-size: 36px;
+    color: #0b4e56;
+    text-align: center;
+  }
+  
+#page-comprovante form .field-group {
+    flex: 1;
+    display: flex;
+  }
+  
+#page-comprovante form .field {
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+
+  #page-comprovante form .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 5%;
+    font-size: 16px;
+    color: #6C6C80;
+  }
+
+  
+  #page-comprovante form .field label {
+    font-size: 14px;
+    margin-bottom: 5%;
+  }
+  
+  #page-comprovante form .buttonG {
+    width: 50%;
+    height: 56px;
+    background: #0b4e56;
+    border-radius: 8px;
+    margin-left: 25%;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+   
+    transition: background-color 0.2s;
+    cursor: pointer;
+  }
+  #page-comprovante form button:hover {
+    background: #106a75;
+  }
+
+  #grid2{
+    width: 60%;
+    position: absolute;
+    margin-top: 2%;
+  }
+
+  

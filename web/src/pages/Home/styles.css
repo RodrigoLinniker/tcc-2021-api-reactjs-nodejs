@@ -1,117 +1,131 @@
 #page-home {
-    background-color: #DCDCDC;
-    color: #6C6C80;
-  }
+  background-color: #dcdcdc;
+  color: #6c6c80;
+}
+
+.particles {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  position: absolute;
+}
 
 #img-home {
   position: absolute;
   width: 50%;
-  left: 47%; 
-	top: 7%; 
+  left: 47%;
+  top: 10%;
 }
-  #page-home .content {
+#page-home {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-width: 100%;
+}
 
-    height: 95%;
-    margin: 10px auto;
-    margin-bottom: 0;
-    padding: 0 8%;
-    display: flex;
-    flex-direction: column;
-    position:absolute;
+#logo {
+  margin-top: 4%;
+  width: 10%;
+  margin-bottom: 4%;
+}
+
+#page-home main {
+  position: absolute;
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 8%;
+}
+
+#page-home main h1 {
+  font-size: 54px;
+  color: #0b4e56;
+}
+
+#page-home main p {
+  font-size: 24px;
+  margin-top: 2%;
+  line-height: 100%;
+}
+
+#page-home main a {
+  width: 100%;
+  max-width: 70%;
+  height: 12%;
+  background: #0b4e56;
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 5%;
+}
+
+#page-home main a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#page-home main a span svg {
+  color: #fff;
+  width: 50%;
+  height: 40%;
+}
+
+#page-home main a strong {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+#page-home .link {
+  height: 8%;
+}
+
+#page-home main a:hover {
+  background: #106a75;
+}
+@media (max-width: 1078px) {
+  #img-home {
+    display: none;
   }
-  
-  #logo{
-    margin-top: 4%;
-    width: 10%;
-    margin-bottom: 4%;
-  }
-  
-  #page-home .content main {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -7%;
-  }
-  
-  #page-home .content main h1 {
-    font-size: 54px;
-    color: #0b4e56;
-  }
-  
-  #page-home .content main p {
-    font-size: 24px;
-    margin-top: 2%;
-    line-height: 100%;
-  }
-  
-  #page-home .content main a {
-    width: 100%;
-    max-width: 70%;
-    height: 12%;
-    background: #0b4e56;
-    border-radius: 8px;
-    text-decoration: none;
-  
-    display: flex;
+}
+@media (max-width: 900px) {
+  #page-home {
     align-items: center;
-    overflow: hidden;
-  
-    margin-top: 5%;
-  }
-  
-  #page-home .content main a span {
-    display: block;
-    background: rgba(0, 0, 0, 0.08);
-    width: 20%;
-    height: 100%;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-  }
-  
-  #page-home .content main a span svg {
-    color: #FFF;
-    width: 50%;
-    height: 40%;
-  }
-  
-  #page-home .content main a strong {
-    flex: 1;
     text-align: center;
-    color: #FFF;
   }
-  
-  #page-home .content main a:hover {
-    background: #106a75;
+
+  #page-home header {
+    margin: 48px auto 0;
   }
-  
-  @media(max-width: 900px) {
-    #img-home {
-      display: none;
-    }
-    #page-home .content {
-      align-items: center;
-      text-align: center;
-    }
-  
-    #page-home .content header {
-      margin: 48px auto 0;
-    }
-  
-    #page-home .content main {
-      align-items: center;
-    }
-  
-    #page-home .content main h1 {
-      font-size: 42px;
-    }
-  
-    #page-home .content main p {
-      font-size: 24px;
-    }
+
+  #page-home main {
+    align-items: center;
   }
-  
+
+  #page-home main h1 {
+    font-size: 42px;
+  }
+
+  #page-home main p {
+    font-size: 24px;
+  }
+}

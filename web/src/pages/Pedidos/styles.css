@@ -82,7 +82,7 @@
     background: #F0F0F5;
   }
   
-  #page-pedido form button {
+  #page-pedido form .buttonG {
     width: 260px;
     height: 56px;
     background: #0b4e56;

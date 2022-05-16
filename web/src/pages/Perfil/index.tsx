@@ -65,7 +65,6 @@ const schema = Yup.object().shape({
   email: Yup.string()
     .required('E-mail obrigatório')
     .email('Digite um e-mail válido'),
-  senha: Yup.string().required('Senha obrigatória'),
   cpf: Yup.string().required('CPF obrigatório').test("is-cpf",
   "CPF inválido",
   (value: any) => validateCPF(value)),
