@@ -370,7 +370,6 @@ const Produtos = () => {
               },
             }}
           />
-          {/*    <DataGrid rows={rows} columns={columns} pageSize={8} /> */}
         </div>
       </main>
       <BottomAppBar />

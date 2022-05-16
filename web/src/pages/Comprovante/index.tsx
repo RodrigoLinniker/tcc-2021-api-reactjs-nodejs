@@ -161,28 +161,6 @@ const Comprovante = () => {
     listPedidosComprovante();
   }, [user.id, cliente]);
 
-  /* function imprimirComprovante() {
-    return <div></div>
-  } */
-
-  /* function imprimirComprovante() {
-    function onDocumentLoadSuccess({ numPages }: any) {
-      setNumPages(numPages);
-    }
-
-    return (
-      <div>
-        <Document file="somefile.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
-        </Document>
-        <p>
-          Page {pageNumber} of {numPages}
-        </p>
-      </div>
-    );
-  }
- */
-
   const MyDocument = () => {
     const pedidosEscolhidos = pedidosComprovante.filter((pedidos) =>
       ids.includes(pedidos.id)

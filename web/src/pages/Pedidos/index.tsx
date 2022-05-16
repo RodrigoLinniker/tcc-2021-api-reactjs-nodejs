@@ -226,14 +226,6 @@ const Pedidos = () => {
     [formData]
   );
 
-  /* const handleSelectProduto = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => {
-      const value = event.target.value;
-      setSelectedProduto(value);
-    },
-    []
-  ); */
-
   const handleChange = useCallback(
     (event: any, value: any) => {
       let valor = value.map((item: any) => item.id);
