@@ -13,7 +13,6 @@ export async function up(knex : Knex){
 
         //relacionamento
         table.integer('cliente_id').unsigned().references('clientes.id').notNullable().onDelete('CASCADE');
-        table.integer('produto_id').unsigned().references('produtos.id').notNullable().onDelete('CASCADE');
         table.integer('user_id').unsigned().references('users.id').notNullable().onDelete('CASCADE');
         table.integer('status_id').unsigned().references('statusPedido.id').notNullable().onDelete('CASCADE');
         
@@ -24,5 +23,5 @@ export async function up(knex : Knex){
 
 export async function down(knex : Knex){
     //Voltar atras (deletar a tabela)
-    return knex.schema.dropTable('clientes');
+    return knex.schema.dropTable('pedidos');
 }

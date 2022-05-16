@@ -33,7 +33,7 @@ routes.use(isAuthenticated);
 routes.get('/produtos/:id', produtosController.index);
 routes.get('/produtos/up/:id', produtosController.list);
 routes.post('/produtos', produtosController.create);
-routes.put('/users/:id',celebrate(userUpdate,{abortEarly:false}), usersController.update);
+routes.put('/users/:id', usersController.update);
 routes.put('/produtos/:id', produtosController.update);
 routes.delete('/produtos/:id', produtosController.delete);
 
@@ -44,11 +44,13 @@ routes.put('/clientes/:id', clientesController.update);
 routes.delete('/clientes/:id', clientesController.delete);
 
 
-routes.get('/pedidos/:id', pedidosController.index);
+routes.get('/pedidos/:id', pedidosController.index); 
+routes.get('/pedidosProduto/:id', pedidosController.listPedidoPruduto); 
+routes.get('/pedidos/:id/:idCliente', pedidosController.listPedidoCliente);
 routes.get('/pedidos/data/:id/:data1/:data2', pedidosController.pedidosData);
 routes.get('/pedidosDados/:id/:data1/:data2', pedidosController.dashboardTotal);
 routes.get('/pedidosGrafico/:id/:data1/:data2', pedidosController.dashboardGrafico);
-routes.get('/pedidos/up/:id', pedidosController.list);
+routes.get('/pedidosUpdate/:id', pedidosController.list);
 routes.post('/pedidos', pedidosController.create);
 routes.put('/pedidos/:id', pedidosController.update);
 routes.delete('/pedidos/:id', pedidosController.delete);

@@ -6,7 +6,7 @@ module.exports = {
         host : 'localhost',
         user : 'root',
         password : '',
-        database : 'db_tcc'
+        database : 'db_tcc1'
       },
       migrations: {
         directory: path.resolve(__dirname, 'src', 'database', 'migrations')

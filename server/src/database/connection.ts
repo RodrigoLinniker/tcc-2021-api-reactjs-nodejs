@@ -6,7 +6,7 @@ const connection = knex({
        host : 'localhost',
        user : 'root',
        password : '',
-       database : 'db_tcc'
+       database : 'db_tcc1'
      },
      useNullAsDefault: true
 })

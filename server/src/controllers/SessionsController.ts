@@ -3,21 +3,14 @@ import knex from '../database/connection';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import authConfig from '../config/auth';
-import * as nodemailer from 'nodemailer';
 
 
 class SessionsController{
 
     async create (request : Request, response : Response){
        
-        const {email, senha} = request.body
-        
-        const produto = await knex("produtos").join('users', 'produtos.user_id', '=', 'users.id').select('produtos.*').where('users.email', email);;
+        const {email, senha} = request.body;
 
-        const cliente = await knex("clientes").join('users', 'clientes.user_id', '=', 'users.id').select('clientes.*').where('users.email', email);
-
-        const pedido = await knex("pedidos").join('users', 'pedidos.user_id', '=', 'users.id').select('pedidos.*').where('email',email);
-        
         const user1 = await knex.select('*').from('users').where('email', email).first();
         const user = await knex.select('id', 'name', 'email', 'telefone', 'cpf').from('users').where('email', email).first()
 
@@ -40,7 +33,7 @@ class SessionsController{
             expiresIn: authConfig.jwt.expireIn
         });
 
-        return response.json({user, token, produto, cliente, pedido});
+        return response.json({user, token});
 
     }
 }
