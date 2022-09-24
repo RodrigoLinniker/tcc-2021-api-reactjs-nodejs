@@ -1,4 +1,5 @@
 # TCC-2021
 Sistema web para microempreendedores designer
 
-[![image.png](https://i.postimg.cc/sgBTxDCG/image.png)](https://postimg.cc/68Xr1K3B)
+![linkgus](https://user-images.githubusercontent.com/53402199/192121313-acc3fb1b-41f1-423e-8e7f-a6915a213df8.PNG)
+
